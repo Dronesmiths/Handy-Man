@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | [BUSINESS_NAME] in [REGION]</title>
+    <meta name="description"
+        content="Professional home services in the [REGION]. Hardscape & landscape design, handyman repairs, and hauling & cleanup services. Free estimates. Call [PHONE_NUMBER].">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="/css/styles.css?v=2.1">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="/" class="logo">[BUSINESS_NAME]</a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services/" class="active">Services</a></li>
+                    <li><a href="/about/">About Us</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                                    <li><a href="/blog/">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:[PHONE_NUMBER_RAW]" class="phone-link mobile-hide"><i class="fas fa-phone"></i>
+                    [PHONE_NUMBER]</a>
+                <a href="/contact/" class="btn btn-primary">Get Free Quote</a>
+                <button class="mobile-menu-btn" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero page-hero"
+        style="background-image: url('/images/handyman-hero.webp'); background-size: cover; background-position: center;">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <h1>Professional Home Services in the [REGION]</h1>
+            <p>From beautiful hardscapes to expert repairs to complete property cleanups - we handle it all with quality
+                craftsmanship and professional service.</p>
+            <div class="hero-btns">
+                <a href="tel:[PHONE_NUMBER_RAW]" class="btn btn-primary">Call [PHONE_NUMBER]</a>
+                <a href="#services-grid" class="btn btn-secondary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose [BUSINESS_NAME]?</h2>
+                <p>Quality workmanship and professional service you can trust!</p>
+            </div>
+            <div class="features-grid grid-balance-4">
+                <div class="feature-card">
+                    <i class="fas fa-dollar-sign feature-icon" style="color: var(--primary-green);"></i>
+                    <h3>Free Estimates</h3>
+                    <p>Get a detailed, no-obligation estimate for your project. Transparent pricing with no hidden fees.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users feature-icon" style="color: var(--primary-green);"></i>
+                    <h3>Experienced Team</h3>
+                    <p>Our skilled professionals have years of experience delivering quality results on every project.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-trophy feature-icon" style="color: var(--primary-green);"></i>
+                    <h3>Quality Guaranteed</h3>
+                    <p>We stand behind our work with a satisfaction guarantee. Your happiness is our priority.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-clock feature-icon" style="color: var(--primary-green);"></i>
+                    <h3>Same-Day Service</h3>
+                    <p>Many services available same-day or next-day. We work on your schedule.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Services Grid -->
+    <section class="av-explore-section" id="services-grid" style="background: var(--bg-light);">
+        <div class="av-explore-inner">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Click a service below to learn more about how we can help transform your property.</p>
+            </div>
+            <div class="av-explore-grid"
+                style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); max-width: 1100px; margin: 0 auto;">
+
+                <!-- Hardscape & Landscape -->
+                <div class="premium-service-card" style="background-image: url('/images/landscape-hero.webp');">
+                    <i class="fas fa-leaf card-icon"></i>
+                    <h3>Hardscape & Landscape</h3>
+                    <p>Custom patios, retaining walls, irrigation systems, and beautiful landscape design for your
+                        outdoor space.</p>
+                    <a href="/services/hardscape-landscape/" class="learn-more">Learn More <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Handyman Pro -->
+                <div class="premium-service-card" style="background-image: url('/images/handyman-hero.webp');">
+                    <i class="fas fa-hammer card-icon"></i>
+                    <h3>Handyman Pro</h3>
+                    <p>Expert home repairs, painting, drywall, light fixtures, deck repairs, and general maintenance
+                        services.</p>
+                    <a href="/services/handyman-pro/" class="learn-more">Learn More <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Hauling & Cleanup -->
+                <div class="premium-service-card" style="background-image: url('/images/waste-cleanup-pro.webp');">
+                    <i class="fas fa-trash-alt card-icon"></i>
+                    <h3>Hauling & Cleanup</h3>
+                    <p>Professional junk removal, construction debris hauling, yard waste cleanup, and estate
+                        cleanouts.</p>
+                    <a href="/services/hauling-cleanup/" class="learn-more">Learn More <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 4 (Placeholder) -->
+                <div class="premium-service-card" style="background-color: var(--navy-light);">
+                    <i class="fas fa-cogs card-icon"></i>
+                    <h3>[SERVICE_4_TITLE]</h3>
+                    <p>[SERVICE_4_DESC]<br>
+                        <br>
+                        <br>
+                    </p>
+                    <a href="/services/" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 5 (Placeholder) -->
+                <div class="premium-service-card" style="background-color: var(--navy-light);">
+                    <i class="fas fa-tools card-icon"></i>
+                    <h3>[SERVICE_5_TITLE]</h3>
+                    <p>[SERVICE_5_DESC]<br>
+                        <br>
+                        <br>
+                    </p>
+                    <a href="/services/" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 6 (Placeholder) -->
+                <div class="premium-service-card" style="background-color: var(--navy-light);">
+                    <i class="fas fa-hard-hat card-icon"></i>
+                    <h3>[SERVICE_6_TITLE]</h3>
+                    <p>[SERVICE_6_DESC]<br>
+                        <br>
+                        <br>
+                    </p>
+                    <a href="/services/" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get Started in 3 Easy Steps</h2>
+                <p>Professional service has never been easier!</p>
+            </div>
+            <div class="steps-grid">
+                <div class="premium-step-card">
+                    <div class="step-number-pill">1</div>
+                    <i class="fas fa-phone-alt step-icon"></i>
+                    <h3>Call or Contact Us</h3>
+                    <p>Reach out at [PHONE_NUMBER] or use our contact form to describe your project and get a free
+                        estimate.</p>
+                </div>
+                <div class="premium-step-card">
+                    <div class="step-number-pill">2</div>
+                    <i class="fas fa-calendar-check step-icon"></i>
+                    <h3>Schedule Service</h3>
+                    <p>We'll work with your schedule to find a convenient time. Many services available same-day or
+                        next-day.</p>
+                </div>
+                <div class="premium-step-card">
+                    <div class="step-number-pill">3</div>
+                    <i class="fas fa-tools step-icon"></i>
+                    <h3>Quality Results</h3>
+                    <p>Our experienced team completes your project with professional craftsmanship and attention to
+                        detail.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="features" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Serving the Entire [REGION]</h2>
+                <p>Professional home services throughout the High Desert</p>
+            </div>
+            <div class="premium-location-grid">
+                <a href="/locations/palmdale/" class="premium-location-card">
+                    <div class="loc-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>[CITY_1]</h3>
+                    <p>[BUSINESS_NAME] in [CITY_1]</p>
+                </a>
+                <a href="/locations/lancaster/" class="premium-location-card">
+                    <div class="loc-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>[CITY_2]</h3>
+                    <p>[BUSINESS_NAME] in [CITY_2]</p>
+                </a>
+                <a href="/locations/quartz-hill/" class="premium-location-card">
+                    <div class="loc-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>[CITY_3]</h3>
+                    <p>[BUSINESS_NAME] in [CITY_3]</p>
+                </a>
+                <a href="/locations/rosamond/" class="premium-location-card">
+                    <div class="loc-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>[CITY_4]</h3>
+                    <p>[BUSINESS_NAME] in [CITY_4]</p>
+                </a>
+                <a href="/locations/lake-los-angeles/" class="premium-location-card">
+                    <div class="loc-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>[CITY_5]</h3>
+                    <p>[BUSINESS_NAME] in [CITY_5]</p>
+                </a>
+                <a href="/locations/littlerock/" class="premium-location-card">
+                    <div class="loc-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>[CITY_6]</h3>
+                    <p>[BUSINESS_NAME] in [CITY_6]</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ - PREMIUM ACCORDION -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our home services.</p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        What services do you offer?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We offer three main service categories: Hardscape & Landscape (patios, retaining walls,
+                            irrigation), Handyman Pro (repairs, painting, maintenance), and Hauling & Cleanup (junk
+                            removal, debris hauling).</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Do you offer free estimates?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes! We provide free, no-obligation estimates for all our services. Just call us or fill out
+                            our contact form.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        How quickly can you start my project?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Many services are available same-day or next-day! Larger projects like landscape design may
+                            require scheduling in advance.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Are you licensed and insured?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes, [BUSINESS_NAME] is fully licensed and insured for your protection and peace of mind on
+                            every project.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        What areas do you serve?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We serve the entire [REGION] including [SERVICE_AREAS], Rosamond,
+                            Lake Los Angeles, and Littlerock.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        How do you price your services?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We provide transparent, competitive pricing based on the scope of your project. Every
+                            estimate is detailed with no hidden fees.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ CTA -->
+            <div class="faq-cta">
+                <a href="tel:[PHONE_NUMBER_RAW]" class="btn btn-primary" style="padding: 16px 40px; font-size: 1.1rem;">
+                    Call Now for Your Free Estimate
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="aw-footer">
+        <div class="container aw-footer-inner">
+            <!-- Brand with Logo -->
+            <div class="aw-footer-brand">
+                <img src="/images/logo-placeholder.png" alt="[BUSINESS_NAME] Logo"
+                    style="max-width: 250px; margin-bottom: 15px;">
+                <p>Your trusted home services provider in the [REGION].</p>
+            </div>
+
+            <!-- Contact -->
+            <div class="aw-footer-contact">
+                <h4 style="color: white; margin-bottom: 15px; font-size: 1.1rem;">Contact Us</h4>
+                <p class="aw-footer-phone">
+
+                    <a href="tel:[PHONE_NUMBER_RAW]">[PHONE_NUMBER]</a>
+                </p>
+                <p class="aw-footer-email">
+                    Complete Home & Property Solutions in [CITY_HQ], [CITY_1] & [CITY_2]
+                </p>
+            </div>
+
+            <!-- Services -->
+            <div class="aw-footer-services">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><a href="/services/hardscape-landscape/">Hardscape & Landscape</a></li>
+                            <li><a href="/services/handyman-pro/">Handyman Pro</a></li>
+                            <li><a href="/services/hauling-cleanup/">Hauling & Cleanup</a></li>
+                            <li><a href="/services/">[SUB_SERVICE_1]</a></li>
+                            <li><a href="/services/">[SUB_SERVICE_2]</a></li>
+                            <li><a href="/services/">[SUB_SERVICE_3]</a></li>
+                            <li><a href="/services/">[SUB_SERVICE_4]</a></li>
+                            <li><a href="/services/">[SUB_SERVICE_5]</a></li>
+                        </ul>
+                    </div>
+
+            <!-- Locations -->
+            <div class="aw-footer-locations">
+                        <h4>Service Areas</h4>
+                        <ul>
+                            <li><a href="/locations/">[CITY_HQ], CA</a></li>
+                            <li><a href="/locations/">[CITY_1], CA</a></li>
+                            <li><a href="/locations/">[CITY_2], CA</a></li>
+                            <li><a href="/locations/">[CITY_3], CA</a></li>
+                            <li><a href="/locations/">[CITY_4]</a></li>
+                            <li><a href="/locations/">[CITY_5]</a></li>
+                        </ul>
+                    </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="aw-footer-bottom">
+                    <p>© <span id="year"></span> [BUSINESS_NAME]. All rights reserved. | [LICENSE_TEXT] | <a href="[GOOGLE_MAPS_URL]">Find Us on Google</a> | <a href="/sitemap.xml">Sitemap</a> | <a href="/privacy/">Privacy Policy</a></p>
+                </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
