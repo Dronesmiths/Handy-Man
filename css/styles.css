@@ -4,6 +4,9 @@
     /* Primary Brand Color */
     --primary-green: #D4AF37;
     /* Secondary Brand Color */
+    --primary-gold: #D4AF37;
+    /* Primary Gold for buttons and accents */
+    --primary-white: #ffffff;
     --navy-dark: #0F1E46;
     /* Darker shade for depth */
     --navy-light: #E6ECF8;
@@ -2038,7 +2041,7 @@ footer {
     display: flex;
     gap: 26px;
     width: max-content;
-    animation: av[CITY_1]Scroll 45s linear infinite;
+    animation: avLancasterScroll 45s linear infinite;
 }
 
 .av-palmdale-review-viewport:hover .av-palmdale-review-track {
@@ -2124,7 +2127,7 @@ footer {
 }
 
 /* SCROLL */
-@keyframes av[CITY_1]Scroll {
+@keyframes avLancasterScroll {
     from {
         transform: translateX(0);
     }

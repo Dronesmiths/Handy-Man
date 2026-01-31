@@ -50,7 +50,7 @@ def main():
         if '.git' in dirs:
             dirs.remove('.git')
         for file in files:
-            if file.endswith('.html') or file.endswith('.js') or file.endswith('.json'):
+            if file.endswith('.html') or file.endswith('.js') or file.endswith('.json') or file.endswith('.css'):
                 process_file(os.path.join(root, file))
 
 if __name__ == "__main__":

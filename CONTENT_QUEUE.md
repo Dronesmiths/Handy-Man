@@ -4,8 +4,8 @@ Use this checklist to track the rollout of the 50 high-authority content pieces.
 
 ## Phase 1: The Authority Foundation (1-10)
 - [x] **01: Cornerstone Guide** - The Essential Homeowner's Guide to Property Maintenance in Palmdale & The Antelope Valley
-- [ ] **02: Locality Anchor** - How AV Handyman Pros Supports Palmdale Homeowners with Reliable Repairs
-- [ ] **03: Service Deep Dive** - Repairing Fences in the High Desert: Wood vs. Vinyl vs. AV Winds
+- [x] **02: Locality Anchor** - How AV Handyman Pros Supports Palmdale Homeowners with Reliable Repairs
+- [x] **03: Service Deep Dive** - Repairing Fences in the High Desert: Wood vs. Vinyl vs. AV Winds
 - [ ] **04: Project Spotlight** - Leona Valley Backyard Transformation: Custom Patio and Hardscape
 - [ ] **05: PAA Capture** - How Much Does a Handyman Cost in Palmdale and Lancaster? (2026 Price Guide)
 - [ ] **06: Service Deep Dive** - Drywall Repair Mastery: How We Achieve Paint-Ready Finishes
