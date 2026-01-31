@@ -16,7 +16,7 @@ Use this checklist to track the rollout of the 50 high-authority content pieces.
 
 ## Phase 2: Strategic Expansion (11-30)
 - [x] **11: Maintenance Tip** - HVAC Pre-Summer Audit: Swamp Cooler vs. Central AC Maintenance
-- [ ] **12: Service Deep Dive** - Professional Caulking & Grouting: Protecting Your Wet Areas
+- [x] **12: Service Deep Dive** - Professional Caulking & Grouting: Protecting Your Wet Areas
 - [ ] **13: PAA Capture** - Do You Need a Permit for a Patio Cover in Palmdale?
 - [ ] **14: Project Spotlight** - Rental Property Refurbishment: Fast Turnaround in Lancaster
 - [ ] **15: Locality Anchor** - Serving Quartz Hill: Specialized Handyman Services for Large Lots
