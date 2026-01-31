@@ -1,6 +1,6 @@
 // Basic interactions scripts
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('[BUSINESS_NAME] site loaded');
+    console.log('AV Handyman Pros site loaded');
 
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

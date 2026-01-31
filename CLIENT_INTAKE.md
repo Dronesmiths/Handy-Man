@@ -1,21 +1,28 @@
 # AI Pilots: Client Intake & Niche Strategy
 
-Before using the automated deployment workflow, the AI agent must have the following information defined for the new project.
+Project: Handyman – Blue / White / Gold
 
 ## 1. Niche & Branding
-- **Business Name**: 
-- **Industry/Niche**: (e.g., HVAC, Pool Cleaning, Detailer)
-- **Primary Color Palette**: (e.g., Royal Blue & Silver)
-- **Voice/Tone**: (e.g., Professional, Aggressive/Urgent, Luxury)
+- **Business Name**: AV Handyman Pros
+- **Industry/Niche**: Handyman Services / Home Repairs
+- **Primary Color Palette**: Blue, White, Gold
+- **Voice/Tone**: Trustworthy, professional, friendly, no-nonsense
 
 ## 2. Location & SEO
-- **Primary HQ**: (City, State)
-- **Service Areas**: (List of key cities for footer/schema)
-- **Primary Keywords**: (e.g., "emergency AC repair", "mobile ceramic coating")
+- **Primary HQ**: Palmdale, CA
+- **Region**: Antelope Valley, CA
+- **Service Areas**: Palmdale, Lancaster, Quartz Hill, Leona Valley, Acton, Rosamond
+- **Primary Keywords**: "handyman Palmdale CA", "handyman services Antelope Valley", "home repair Palmdale"
 
 ## 3. Contact & Connectivity
-- **Phone Number**: 
-- **Email Address**: 
+- **Phone Number**: (661) 498-4444
+- **Email Address**: info@avhandymanpros.com
 
-> [!TIP]
-> **Next Step**: Proceed to [BRAND_GUIDE.md](file:///Users/mediusa/NOVA/Repos/Reed%20and%20Sons/BRAND_GUIDE.md) to define the visual identity.
+## 4. Expansion Services
+- **Service 4**: Fence Repair (Wood, vinyl, and gate repairs to restore safety and curb appeal.)
+- **Service 5**: Drywall Repair (Hole patches, cracks, water damage fixes, and paint-ready finishes.)
+- **Service 6**: Small Remodel Projects (Minor kitchen, bathroom, and interior upgrade projects without contractor pricing.)
+
+## 5. Compliance & External
+- **License Info**: Licensed & insured for general handyman services.
+- **Google Maps URL**: https://maps.google.com/?q=Palmdale+CA

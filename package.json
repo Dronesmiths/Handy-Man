@@ -1,0 +1,17 @@
+{
+    "name": "av-handyman-pros",
+    "version": "1.0.0",
+    "description": "AV Handyman Pros - Handyman Services in Palmdale, CA",
+    "scripts": {
+        "dev": "python3 -m http.server 4000",
+        "launch": "aws s3 sync . s3://av-handyman-pros --delete --exclude \".git/*\" --exclude \".DS_Store\" --exclude \"scripts/*\" --exclude \"package.json\" --exclude \"package-lock.json\"",
+        "build": "python3 scripts/brand_transform.py && python3 scripts/optimize_assets.py"
+    },
+    "keywords": [
+        "handyman",
+        "palmdale",
+        "antelope valley"
+    ],
+    "author": "AI Pilots",
+    "license": "ISC"
+}

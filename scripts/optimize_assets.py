@@ -3,7 +3,7 @@ import re
 import subprocess
 
 # Configuration
-base_dir = "/Users/mediusa/NOVA/Repos/Reed and Sons"
+base_dir = "/Users/mediusa/NOVA/Repos/Handy Man Services"
 images_dir = os.path.join(base_dir, "images")
 extensions_to_convert = (".png", ".jpg", ".jpeg")
 
