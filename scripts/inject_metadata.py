@@ -8,13 +8,10 @@ def get_breadcrumbs(file_path, root_dir):
     relative_path = os.path.relpath(file_path, root_dir)
     parts = relative_path.split(os.sep)
     
-    # Remove 'index.html' if it's the last part
     if parts[-1] == 'index.html':
         parts = parts[:-1]
     
     breadcrumbs = []
-    
-    # Always start with Home
     breadcrumbs.append({
         "@type": "ListItem",
         "position": 1,
@@ -27,7 +24,6 @@ def get_breadcrumbs(file_path, root_dir):
         current_path += f"/{part}"
         name = part.replace('-', ' ').title()
         
-        # Custom naming for known paths
         if part == 'services': name = 'Our Services'
         elif part == 'blog': name = 'Blog'
         elif part == 'about': name = 'About Us'
@@ -43,42 +39,44 @@ def get_breadcrumbs(file_path, root_dir):
     
     return breadcrumbs
 
-def inject_breadcrumbs(file_path, root_dir):
+def inject_metadata(file_path, root_dir):
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    breadcrumbs = get_breadcrumbs(file_path, root_dir)
+    # Calculate canonical URL
+    relative_path = os.path.relpath(file_path, root_dir)
+    path_parts = relative_path.split(os.sep)
+    if path_parts[-1] == 'index.html':
+        path_parts = path_parts[:-1]
+    canonical_url = BASE_URL + "/" + ("/".join(path_parts) + "/" if path_parts else "")
     
+    # 1. Handle Canonical Tag
+    canonical_tag = f'<link rel="canonical" href="{canonical_url}">'
+    if '<link rel="canonical"' in content:
+        content = re.sub(r'<link rel="canonical" href="[^"]*">', canonical_tag, content)
+    else:
+        content = content.replace('</head>', f'    {canonical_tag}\n</head>')
+
+    # 2. Handle Breadcrumb Schema
+    breadcrumbs = get_breadcrumbs(file_path, root_dir)
     breadcrumb_schema = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": breadcrumbs
     }
+    schema_script = f'<script type="application/ld+json">\n    {json.dumps(breadcrumb_schema, indent=2)}\n    </script>'
     
-    schema_script = f'\n    <script type="application/ld+json">\n    {json.dumps(breadcrumb_schema, indent=2)}\n    </script>'
-    
-    # Inject before the end of </head>
-    if '</head>' in content:
-        # Calculate canonical URL
-        relative_path = os.path.relpath(file_path, root_dir)
-        path_parts = relative_path.split(os.sep)
-        if path_parts[-1] == 'index.html':
-            path_parts = path_parts[:-1]
-        canonical_url = BASE_URL + "/" + ("/".join(path_parts) + "/" if path_parts else "")
-        
-        canonical_tag = f'\n    <link rel="canonical" href="{canonical_url}">'
-        
-        # In case we want to replace existing one:
-        if '<link rel="canonical"' in content:
-             # Basic regex to replace existing canonical if it exists (safety)
-             content = re.sub(r'<link rel="canonical" href="[^"]*">', f'<link rel="canonical" href="{canonical_url}">', content)
-             new_content = content.replace('</head>', f'{schema_script}\n\n</head>')
-        else:
-             new_content = content.replace('</head>', f'{canonical_tag}{schema_script}\n\n</head>')
-             
-        with open(file_path, 'w', encoding='utf-8') as f:
-            f.write(new_content)
-        print(f"Injected Breadcrumbs & Canonical: {file_path}")
+    # Check if breadcrumb schema already exists and replace it, or inject new
+    if '"@type": "BreadcrumbList"' in content:
+        # Complex replacement: find the script block containing BreadcrumbList
+        # This is easier: just look for the pattern and replace it
+        content = re.sub(r'<script type="application/ld\+json">.*?"@type":\s*"BreadcrumbList".*?</script>', schema_script, content, flags=re.DOTALL)
+    else:
+        content = content.replace('</head>', f'    {schema_script}\n</head>')
+
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.write(content)
+    print(f"Processed: {file_path}")
 
 def main():
     root_dir = '/Users/mediusa/NOVA/Repos/Handy Man Services'
@@ -87,7 +85,7 @@ def main():
         if 'scripts' in dirs: dirs.remove('scripts')
         for file in files:
             if file.endswith('.html'):
-                inject_breadcrumbs(os.path.join(root, file), root_dir)
+                inject_metadata(os.path.join(root, file), root_dir)
 
 if __name__ == "__main__":
     main()

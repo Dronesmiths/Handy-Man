@@ -1,0 +1,41 @@
+{
+    "CallerReference": "avhandymanpros-v3-" + str(int(time.time())),
+    "Aliases": {
+        "Quantity": 0
+    },
+    "DefaultRootObject": "index.html",
+    "Origins": {
+        "Quantity": 1,
+        "Items": [
+            {
+                "Id": "S3-avhandymanpros-v3",
+                "DomainName": "avhandymanpros-v3.s3-website-us-east-1.amazonaws.com",
+                "CustomOriginConfig": {
+                    "HTTPPort": 80,
+                    "HTTPSPort": 443,
+                    "OriginProtocolPolicy": "http-only"
+                }
+            }
+        ]
+    },
+    "DefaultCacheBehavior": {
+        "TargetOriginId": "S3-avhandymanpros-v3",
+        "ForwardedValues": {
+            "QueryString": false,
+            "Cookies": {
+                "Forward": "none"
+            }
+        },
+        "TrustedSigners": {
+            "Enabled": false,
+            "Quantity": 0
+        },
+        "ViewerProtocolPolicy": "redirect-to-https",
+        "MinTTL": 0
+    },
+    "CacheBehaviors": {
+        "Quantity": 0
+    },
+    "Comment": "AV Handyman Pros CloudFront Distribution",
+    "Enabled": true
+}

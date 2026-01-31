@@ -29,6 +29,8 @@ replacements = {
     '[SUB_SERVICE_5]': 'Home Maintenance',
     '[FONT_HEADING]': 'Poppins',
     '[FONT_BODY]': 'Inter',
+    'd1sxjpzrvgytjj.cloudfront.net': 'd1aeo7n5mwkhsx.cloudfront.net',
+    '[CLOUDFRONT_URL]': 'd1aeo7n5mwkhsx.cloudfront.net',
 }
 
 def process_file(file_path):
