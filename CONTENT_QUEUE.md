@@ -3,16 +3,16 @@
 Use this checklist to track the rollout of the 50 high-authority content pieces. Mark as `[x]` only after the page is live and CloudFront cache is invalidated.
 
 ## Phase 1: The Authority Foundation (1-10)
-- [ ] **01: Cornerstone Guide** - [Topic from BLOG_STRATEGY.md]
-- [ ] **02: Locality Anchor** - How [Brand] serves [Primary HQ]
-- [ ] **03: Service Deep Dive** - [Primary Service] Best Practices
-- [ ] **04: Project Spotlight** - [Neighborhood Name] Transformation
-- [ ] **05: PAA Capture** - How much does [Service] cost in [City]?
-- [ ] **06: Service Deep Dive** - [Secondary Service] Quality Standards
-- [ ] **07: Maintenance Tip** - Preparing your [System] for [Season]
-- [ ] **08: Project Spotlight** - Restoration in [Nearby City]
-- [ ] **09: PAA Capture** - Top 5 questions about [Service] in [State]
-- [ ] **10: Cornerstone Pillar** - The Ultimate [Niche] Checklist
+- [x] **01: Cornerstone Guide** - The Essential Homeowner's Guide to Property Maintenance in Palmdale & The Antelope Valley
+- [ ] **02: Locality Anchor** - How AV Handyman Pros Supports Palmdale Homeowners with Reliable Repairs
+- [ ] **03: Service Deep Dive** - Repairing Fences in the High Desert: Wood vs. Vinyl vs. AV Winds
+- [ ] **04: Project Spotlight** - Leona Valley Backyard Transformation: Custom Patio and Hardscape
+- [ ] **05: PAA Capture** - How Much Does a Handyman Cost in Palmdale and Lancaster? (2026 Price Guide)
+- [ ] **06: Service Deep Dive** - Drywall Repair Mastery: How We Achieve Paint-Ready Finishes
+- [ ] **07: Maintenance Tip** - Preparing Your Home for High Desert Winters (Acton & Leona Valley Edition)
+- [ ] **08: Project Spotlight** - Fence and Gate Restoration in Quartz Hill
+- [ ] **09: PAA Capture** - Top 5 Home Repair Questions from Rosamond Property Owners
+- [ ] **10: Cornerstone Pillar** - The Ultimate Home Improvement Checklist for Antelope Valley Residents
 
 ## Phase 2: Strategic Expansion (11-30)
 - [ ] **11:** _(Define next topic based on SEO_ROADMAP.md)_
@@ -22,4 +22,3 @@ Use this checklist to track the rollout of the 50 high-authority content pieces.
 ## Phase 3: Domain Dominance (31-50)
 - [ ] **31:** ...
 - [ ] **50:** ...
-
